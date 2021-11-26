@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>tugas ku</title>
+<style>
+    * {
+        box-sizing: border-box;      
+    }
+    body {
+        display: flex;
+        min-width: 30vh;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 4;
+        
+    } 
+    #container {
+        display: flex;
+        flex: 1;
+    }
+    #container > article {
+        width: 10%;
+        flex: 1;
+        order: 60;
+        height: 450px;
+        background-color: rgb(241, 56, 56);
+    }
+    
+    #container > aside{
+        flex: 0 0 20vw;
+    }
+   #container > aside {
+       background: teal;
+       order: 2;
+       width : 200px;
+    }
+    header, footer {
+        background: turquoise;
+        height : 20vh; 
+    }
+    header, footer, article, nav, aside {
+        padding: 1em;
+    }
+</style>
+<body>
+    <fieldset style="width:70%">
+    <header>
+        <center><lower><h2>Header</h2></lower></center>
+    </header>
+    <div id="container">
+        <article border="1" height="500" width="800" align="center" bgcolor="black">
+            <center><h2><p>Article</p></h2></center>
+            <img src="motivasi.jpg"  style="width:190px;">
+            <img src="motivasi.jpg"  style="width:190px">
+            <img src="hikmah.jpg"  style="width:187px">
+        </article>
+            <aside>
+                <center><h2>Aside</h2></center>
+            </aside>
+        </div>
+    </div>
+    <footer>
+         <center><h2>Footer</h2></center>
+    </footer>
+    </fieldset>    
+</body>
+</html
